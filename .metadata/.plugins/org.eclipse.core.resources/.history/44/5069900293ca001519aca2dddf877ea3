@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+public class Tester {
+
+	public static int maxLength(ArrayList<String> x)
+	{	int max = 0;
+	
+		if(!x.isEmpty())
+		{
+			for(int i = 0;i < x.size(); i++)
+			{
+				if(x.get(i).length() > i)
+				{
+				max = x.get(i).length();
+				}
+			}
+		}
+		return max;
+	}
+	public static void main(String[] args) {
+		
+		ArrayList<String> p = new ArrayList<String>();
+		
+		p.add("1");
+		p.add("");
+		p.add("two");
+		p.add("be");
+		p.add("aardvark");
+		
+		System.out.println(maxLength(p));
+		
+		
+		
+	}
+
+}

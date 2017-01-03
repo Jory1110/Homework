@@ -1,0 +1,5 @@
+[insertion,1000,0, insertion,2000,0, insertion,3000,0, insertion,4000,0, insertion,5000,16, insertion,6000,0, insertion,7000,0, insertion,8000,0, insertion,9000,0, insertion,10000,16, insertion,15000,16, insertion,20000,63, insertion,25000,47]
+[quick,1000,0, quick,2000,0, quick,3000,0, quick,4000,0, quick,5000,0, quick,6000,0, quick,7000,0, quick,8000,0, quick,9000,0, quick,10000,0, quick,15000,0, quick,20000,0, quick,25000,16]
+[selection,1000,15, selection,2000,0, selection,3000,0, selection,4000,0, selection,5000,0, selection,6000,16, selection,7000,15, selection,8000,16, selection,9000,31, selection,10000,31, selection,15000,62, selection,20000,94, selection,25000,140]
+[bubble,1000,0, bubble,2000,16, bubble,3000,15, bubble,4000,16, bubble,5000,31, bubble,6000,31, bubble,7000,63, bubble,8000,62, bubble,9000,78, bubble,10000,109, bubble,15000,250, bubble,20000,438, bubble,25000,699]
+[merge,1000,0, merge,2000,0, merge,3000,0, merge,4000,0, merge,5000,0, merge,6000,0, merge,7000,0, merge,8000,16, merge,9000,0, merge,10000,0, merge,15000,0, merge,20000,0, merge,25000,0]

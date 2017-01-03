@@ -1,0 +1,33 @@
+package Game;
+
+import java.util.ArrayList;
+
+public class Game {
+
+	private static Game game;
+	private ArrayList<Room> rooms;
+	private Hero hero;
+
+	private Game(ArrayList<Room> rooms, Hero hero)
+	{
+		this.rooms = rooms;
+		this.hero = hero;
+	}
+	
+	public ArrayList<Room> getRooms() {
+		return game.rooms;
+
+	}
+
+	public Hero getHero() {
+		return game.hero;
+	}
+	
+	public void initializeGame(ArrayList<Room> rooms, Hero hero) {
+		
+		if(game == null) {
+			game = new Game(rooms, hero);
+		}
+	}
+
+}

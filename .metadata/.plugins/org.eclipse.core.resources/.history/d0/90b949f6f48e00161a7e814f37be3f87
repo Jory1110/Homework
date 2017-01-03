@@ -1,0 +1,23 @@
+package RoomManagement;
+
+public class Door {
+
+	private int ConnectedRooms;
+
+	private int DoorID;
+
+	private RoomManagement.Room room;
+
+	private RoomManagement.Room room;
+
+	private RoomManagement.Room room;
+
+	public RoomManagement.Door getConnectedRooms() {
+		return null;
+	}
+
+	public int getDoorID() {
+		return 0;
+	}
+
+}

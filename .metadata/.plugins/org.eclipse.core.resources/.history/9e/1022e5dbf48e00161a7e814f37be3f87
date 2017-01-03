@@ -1,0 +1,11 @@
+package InventoryManagement;
+
+public class Consumable extends InventoryManagement.Artifact {
+
+	private int HealAmount;
+
+	public int getHealAmount() {
+		return 0;
+	}
+
+}

@@ -1,0 +1,38 @@
+package Interface;
+
+import RoomManagement.Room;
+import Combat.Hero;
+import Combat.Monster;
+import Combat.Character;
+import RoomManagement.Puzzle;
+import InventoryManagement.Artifact;
+
+public class Game {
+
+	private RoomManagement.Room Rooms;
+
+	private Combat.Hero Hero;
+
+	private RoomManagement.Room room;
+
+	private Combat.Hero hero;
+
+	private Combat.Monster monster;
+
+	private Combat.Character character;
+
+	private RoomManagement.Puzzle puzzle;
+
+	private InventoryManagement.Artifact artifact;
+
+	private InventoryManagement.Artifact artifact;
+
+	public void getRooms() {
+
+	}
+
+	public void getHero() {
+
+	}
+
+}

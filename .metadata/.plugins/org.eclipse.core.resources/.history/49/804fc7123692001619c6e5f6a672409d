@@ -1,0 +1,23 @@
+package Game;
+
+public class SearchRoomControl {
+	
+	Room r1;
+	
+	public SearchRoomControl(Room r1)
+	{
+		this.r1 = r1;
+	}
+	
+	public void searchRoom()
+	{
+		System.out.println(r1.getDescription());
+		System.out.println("The you notice the following items in this room ");
+		
+		for(int i = 0; i < r1.getArtifact().size();i++)
+		{
+			System.out.println(r1.getArtifact().get(i).getName());
+		}
+	}
+
+}

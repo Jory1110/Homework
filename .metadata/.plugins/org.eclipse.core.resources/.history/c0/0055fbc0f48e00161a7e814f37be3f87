@@ -1,0 +1,39 @@
+package InventoryManagement;
+
+import Combat.Hero;
+import RoomManagement.Room;
+import Interface.Game;
+
+public class Artifact {
+
+	private String Name;
+
+	private String Description;
+
+	private int ArtifactID;
+
+	private Combat.Hero hero;
+
+	private RoomManagement.Room room;
+
+	private Interface.Game game;
+
+	private InventoryManagement.Inventory inventory;
+
+	private RoomManagement.Room room;
+
+	private Interface.Game game;
+
+	public String getName() {
+		return null;
+	}
+
+	public String getDescription() {
+		return null;
+	}
+
+	public int getArtifactID() {
+		return 0;
+	}
+
+}

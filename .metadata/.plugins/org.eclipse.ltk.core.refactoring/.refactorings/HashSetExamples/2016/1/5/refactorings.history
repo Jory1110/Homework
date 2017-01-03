@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;HashSetExamples&apos;&#x0D;&#x0A;- Original project: &apos;HashSetExamples&apos;&#x0D;&#x0A;- Destination element: &apos;HashSetExamples&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     alice30.txt&#x0D;&#x0A;     war-and-peace.txt&#x0D;&#x0A;     words.txt&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="=HashSetExamples" element1="src/alice30.txt" element2="src/war-and-peace.txt" element3="src/words.txt" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1453998335063" units="0" version="1.0"/>
+</session>

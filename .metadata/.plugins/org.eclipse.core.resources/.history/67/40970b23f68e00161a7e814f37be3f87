@@ -1,0 +1,11 @@
+package InventoryManagement;
+
+public class Weapon extends InventoryManagement.Artifact {
+
+	private int Strength;
+
+	public int getStrength() {
+		return 0;
+	}
+
+}

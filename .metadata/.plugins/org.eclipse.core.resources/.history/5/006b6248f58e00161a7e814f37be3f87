@@ -1,0 +1,101 @@
+package Combat;
+
+import InventoryManagement.Weapon;
+import InventoryManagement.Armor;
+import InventoryManagement.Artifact;
+import RoomManagement.Puzzle;
+import RoomManagement.Room;
+import Interface.Game;
+import InventoryManagement.Inventory;
+
+public class Hero extends Combat.Character {
+
+	private String StatusCondition;
+
+	private InventoryManagement.Weapon EquipedWeapon;
+
+	private InventoryManagement.Armor EquippedArmor;
+
+	private int Defense;
+
+	private InventoryManagement.Artifact Inventory;
+
+	private Combat.Monster monster;
+
+	private InventoryManagement.Artifact artifact;
+
+	private RoomManagement.Puzzle puzzle;
+
+	private RoomManagement.Room room;
+
+	private Interface.Game game;
+
+	private RoomManagement.Puzzle puzzle;
+
+	private InventoryManagement.Inventory inventory;
+
+	public void useItem() {
+
+	}
+
+	public void changeLocation() {
+
+	}
+
+	public void itemPickUp() {
+
+	}
+
+	public void fleeEncounter() {
+
+	}
+
+	public void equipArmor() {
+
+	}
+
+	public void equipWeapon() {
+
+	}
+
+	public String getStatusCondition() {
+		return null;
+	}
+
+	public void setStatusCondition() {
+
+	}
+
+	public InventoryManagement.Weapon getEquippedWeapon() {
+		return null;
+	}
+
+	public void setEquippedWeapon() {
+
+	}
+
+	public InventoryManagement.Armor getEquippedArmor() {
+		return null;
+	}
+
+	public void setEquippedArmor() {
+
+	}
+
+	public int getDefense() {
+		return 0;
+	}
+
+	public void setDefense() {
+
+	}
+
+	public int getInventory() {
+		return 0;
+	}
+
+	public void setInventory() {
+
+	}
+
+}

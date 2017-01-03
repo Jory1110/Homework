@@ -1,0 +1,15 @@
+1475703886991	Encapsulate field 'name'
+1475703892031	Encapsulate field 'description'
+1475703895808	Encapsulate field 'artifactID'
+1475704383403	Encapsulate field 'healAmount'
+1475704490898	Rename package 'InterfaceSubSystem'
+1475704503123	Rename package 'InventorySubSystem'
+1475704513983	Rename package 'CombatSubSystem'
+1475704536406	Rename package 'RoomManagementSubSystem'
+1475704550223	Rename package 'Inventory'
+1475704589244	Rename package 'Interface'
+1475704693300	Encapsulate field 'defense'
+1475704701903	Copy package
+1475704712554	Delete element
+1475704733992	Delete element
+1475704797547	Encapsulate field 'strength'

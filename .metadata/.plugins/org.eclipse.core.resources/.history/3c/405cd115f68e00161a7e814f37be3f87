@@ -1,0 +1,99 @@
+package RoomManagement;
+
+import Combat.Monster;
+import InventoryManagement.Artifact;
+import Combat.Hero;
+import Interface.Game;
+import Combat.Character;
+
+public class Room {
+
+	private Combat.Monster Monster;
+
+	private RoomManagement.Puzzle Puzzle;
+
+	private String Description;
+
+	private RoomManagement.Door Doors;
+
+	private InventoryManagement.Artifact Artifact;
+
+	private int RoomID;
+
+	private boolean Visited;
+
+	private String Name;
+
+	private Combat.Hero hero;
+
+	private RoomManagement.Puzzle puzzle;
+
+	private Combat.Monster monster;
+
+	private InventoryManagement.Artifact artifact;
+
+	private Interface.Game game;
+
+	private Combat.Character character;
+
+	private RoomManagement.Door door;
+
+	private InventoryManagement.Artifact artifact;
+
+	private RoomManagement.Door door;
+
+	private RoomManagement.Door door;
+
+	private RoomManagement.Puzzle puzzle;
+
+	private RoomManagement.Puzzle puzzle;
+
+	public Combat.Monster getMonster() {
+		return null;
+	}
+
+	public void setMonster() {
+
+	}
+
+	public RoomManagement.Puzzle getPuzzle() {
+		return null;
+	}
+
+	public void setPuzzle() {
+
+	}
+
+	public String getDescription() {
+		return null;
+	}
+
+	public RoomManagement.Door getDoors() {
+		return null;
+	}
+
+	public InventoryManagement.Artifact getArtifact() {
+		return null;
+	}
+
+	public void setArtifact() {
+
+	}
+
+	public int getRoomID() {
+		return 0;
+	}
+
+	public boolean getVisited() {
+		return false;
+	}
+
+	public void setVisited() {
+
+	}
+
+	public String getName() {
+		return null;
+	}
+
+}

@@ -1,0 +1,13 @@
+package InventoryManagement;
+
+import Combat.Hero;
+
+public class Inventory {
+
+	private InventoryManagement.Artifact Artifacts;
+
+	private Combat.Hero hero;
+
+	private InventoryManagement.Artifact artifact;
+
+}

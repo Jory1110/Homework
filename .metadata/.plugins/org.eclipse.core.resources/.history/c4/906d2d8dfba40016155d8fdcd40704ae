@@ -1,0 +1,169 @@
+package main.MenuSystem;
+import main.Game;
+import main.CombatSystem.*;
+import main.InventorySystem.InventoryItem;
+import main.RoomSystem.Room;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class InventoryMenu extends AbstractMenu
+{
+	public InventoryMenu(MenuLoader menuLoader) 
+	{
+		super(menuLoader);
+	}
+
+	private String description = 
+			"Please Enter a number based on your Command \n"
+			+ "1. Equip Item \n"
+			+ "2. Unequip Item \n"
+			+ "3. Drop Item \n"
+			+ "4. View Item \n"
+			+ "5. Use Item \n"
+			+ "6. Main Menu";
+
+	private void viewItem() throws IOException 
+	{
+		ArrayList<InventoryItem> items = Game.getHero().getPlayerInventory();
+		
+		System.out.println("Which item would you like to look at?");
+		for(InventoryItem x: items)
+		{
+			System.out.println(x.getItem().getName());
+		}
+		String input = GameInput.getString();
+		
+		for(InventoryItem x: items)
+		{
+			if(x.getItem().getName().equals(input))
+			{
+				System.out.println(x.getItem().getDescription());
+			}
+		}
+		
+	}
+
+	private void dropItem() throws IOException 
+	{
+		ArrayList<InventoryItem> items = Game.getHero().getPlayerInventory();
+		System.out.println("Which item would you like to drop");
+		for(InventoryItem x: items)
+		{
+			System.out.println(x.getItem().getName());
+		}
+		String input = GameInput.getString();
+		
+		for(InventoryItem x: items)
+		{
+			if(x.getItem().getName().equals(input))
+			{
+				System.out.println(input + " has been dropped in the room");
+				Room room = Game.getHero().getRoom();
+				room.addArtifacts(x.getItem());
+				items.remove(x);
+			}
+		}
+		
+	}
+
+	private void unEquipItem() throws IOException 
+	{
+		System.out.println("Which item would you like to unequip?");
+		
+		System.out.println(Game.getHero().getEquippedArmor().getName());
+		System.out.println(Game.getHero().getEquippedWeapon().getName());
+		
+		String input = GameInput.getString();
+		
+		if(Game.getHero().getEquippedArmor().equals(input))
+		{
+			Game.getHero().unequipArmor();
+		}
+		else if(Game.getHero().getEquippedWeapon().equals(input))
+		{
+			Game.getHero().unequipWeapon();
+		}
+		else
+		{
+			System.out.println("You foolishly look around before realizing that you dont have anything by the name of " + input + " equipped.");
+		}
+	}
+
+	private void equipItem() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	private void useItem() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String toString()
+	{
+		return description;
+	}
+	@Override
+	void mainPrompt() 
+	{
+		boolean inInventory = true;
+		
+		
+		System.out.println(toString());
+		while(inInventory)
+		{
+			try {
+			
+				String input = GameInput.getString();
+			
+				if(input.equals("1"))
+				{
+					equipItem();
+					
+				}
+				else if(input.equals("2"))
+				{
+					unEquipItem();
+					
+				}
+				else if(input.equals("3"))
+				{
+					dropItem();
+					
+				}
+				else if(input.equals("4"))
+				{
+					viewItem();
+					
+				}
+				else if(input.equals("5"))
+				{
+					useItem();
+				}
+				else if(input.equals("6"))
+				{
+					inInventory = false;
+					MenuLoader.loadGameMenu(this);
+				
+				}
+				else
+				{
+					System.out.println(input + " is not a valid input please");
+					
+				}
+			} catch (IOException e) {
+				System.out.println("Issue reading input");
+			}
+		}
+	}
+
+	
+
+	@Override
+	void onDestroy() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,11 @@
+package InventoryManagement;
+
+public class Armor extends InventoryManagement.Artifact {
+
+	private int Defense;
+
+	public int getDefense() {
+		return 0;
+	}
+
+}

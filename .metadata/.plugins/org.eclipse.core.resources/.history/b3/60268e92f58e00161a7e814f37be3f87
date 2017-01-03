@@ -1,0 +1,31 @@
+package Combat;
+
+import InventoryManagement.Artifact;
+import RoomManagement.Room;
+import Interface.Game;
+
+public class Monster extends Combat.Character {
+
+	private double ProbabilytOfAppearing;
+
+	private InventoryManagement.Artifact DroppedItem;
+
+	private Combat.Hero hero;
+
+	private RoomManagement.Room room;
+
+	private Interface.Game game;
+
+	public double getProbabilityOfApprearing() {
+		return 0;
+	}
+
+	public InventoryManagement.Artifact getDroppedItem() {
+		return null;
+	}
+
+	public void setDroppedItem() {
+
+	}
+
+}
